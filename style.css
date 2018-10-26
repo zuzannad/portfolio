@@ -7,6 +7,12 @@ font-family: 'Saira Condensed', sans-serif; */
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 header {
     position: relative;
     background-color: #91C46C;
@@ -293,6 +299,112 @@ header button {
     }
 }
 
-section {
+/* section {
     height: 100vh;
+} */
+
+/*Sekcja 1 "features" */
+
+.features {
+
+    padding: 5%;
+    text-align: center;
+    max-width: 1600px;
+    margin: 40px auto;
+}
+
+.features h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.features h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.features p {
+    font-family: 'Saira', sans-serif;
+    font-weight: light;
+    font-size: 12px;
+    margin: 15px;
+
+}
+
+.features img {
+    width: 100%;
+    max-width: 375px;
+    margin: 5px 0;
+}
+
+@media (min-width: 360px) {
+    .features p {
+        font-size: 15px;
+    }
+
+    .features h1 {
+        font-size: 26px;
+    }
+
+    .features h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .features p {
+        font-size: 20px;
+    }
+
+    .features h1 {
+        font-size: 30px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 30px;
+    }
+
+    .features h2 {
+        font-size: 25px;
+    }
+
+    .features p {
+        font-size: 17px;
+        line-height: 120%;
+    }
+
+    .features {
+        padding: 5% 2%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .features {
+        margin-top: 20px;
+    }
+
+    .features h1 {
+        font-size: 60px;
+    }
+
+    .features h2 {
+        font-size: 36px;
+    }
+
+    .features p {
+        font-size: 21px;
+        line-height: 40px;
+    }
 }
