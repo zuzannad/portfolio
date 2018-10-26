@@ -9,8 +9,9 @@ font-family: 'Saira Condensed', sans-serif; */
 
 header {
     position: relative;
-    background-color: #29a6dc;
-    height: 90vh;
+    background-color: #91C46C;
+    height: 100vh;
+    overflow: hidden;
 }
 
 header img {
@@ -20,14 +21,11 @@ header img {
     height: 48%;
 }
 
-header .welcome {
+header div.welcome {
     position: absolute;
     top: 7%;
     left: 5%;
     right: 5%;
-}
-
-header div {
     font-family: 'Saira Condensed', sans-serif;
     text-align: center;
     font-weight: bold;
@@ -35,6 +33,7 @@ header div {
     color: white;
     text-transform: uppercase;
 }
+
 
 header h1 {
     margin-top: 15px;
@@ -57,6 +56,116 @@ header button {
     font-size: 12px;
     border: 2px solid white;
 }
+
+@media(orientation: landscape) {
+    header img {
+        position: absolute;
+        bottom: 0;
+        right: -5%;
+        height: 80%;
+    }
+
+    header div.welcome {
+        left: 5%;
+        right: 48%;
+        top: 10%;
+    }
+
+    header button {
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    header button {
+        font-size: 17px;
+        line-height: 40px;
+        margin-top: 30px;
+    }
+
+    header img {
+        right: -15%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 411px) {
+    header img {
+        right: -5%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 26px;
+    }
+
+    header button {
+        font-size: 19px;
+        line-height: 47px;
+        margin-top: 35px;
+    }
+
+    header p {
+        font-size: 45px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    header div.welcome {
+        top: 13%;
+    }
+
+    header button {
+        font-size: 17px;
+        line-height: 40px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header h1 {
+        margin-top: 55px;
+        font-size: 36px;
+    }
+
+    header h2 {
+        font-size: 34px;
+    }
+
+    header img {
+        height: 95%;
+        right: -22%;
+    }
+
+    header button {
+        margin-top: 70px;
+        font-size: 24px;
+        line-height: 52px;
+    }
+
+    header p {
+        font-size: 56px;
+    }
+}
+
+
 
 section {
     height: 100vh;
