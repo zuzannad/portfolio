@@ -422,8 +422,8 @@ header button {
     text-transform: uppercase;
     color: white;
     text-align: center;
-    padding: 20px 20px;
-    margin-bottom: 15px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
 }
 
 .portfolio .web img {
@@ -435,7 +435,7 @@ header button {
     font-family: 'Saira', sans-serif;
     font-weight: normal;
     text-align: left;
-    padding: 18px 20px 20px 0;
+    padding: 10px 20px 20px 0;
 }
 
 .portfolio .about h2 {
@@ -462,4 +462,20 @@ header button {
 
 .portfolio .project:nth-of-type(odd) {
     background-color: #91C46C;
+}
+
+@media (orientation: landscape) {
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .project:nth-of-type(even) .web {
+        float: right;
+    }
 }
